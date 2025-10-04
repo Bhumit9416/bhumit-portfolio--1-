@@ -23,7 +23,7 @@ const projects: Project[] = [
     summary:
       "Full-stack MERN recruitment platform with role-based authentication, secure sessions, real-time notifications, and responsive analytics dashboard.",
     tags: ["React", "Node", "Express", "MongoDB", "Tailwind", "Socket.io", "JWT"],
-    repo: "https://github.com/your-username/rozzgari",
+    repo: "https://github.com/Bhumit9416/ROZZGARIFINAL",
     demo: "https://your-demo-url.com/rozzgari",
   },
   {
@@ -31,7 +31,7 @@ const projects: Project[] = [
     summary:
       "Secure record management with scalable CRUD and interactive visualizations. Optimized queries for fast analytics.",
     tags: ["React", "Node", "Express", "MongoDB", "MySQL", "Tailwind", "Chart.js"],
-    repo: "https://github.com/your-username/medfolio",
+    repo: "https://github.com/Bhumit9416/MEDFOLIOFINAL",
     demo: "https://your-demo-url.com/medfolio",
   },
   {
@@ -39,7 +39,7 @@ const projects: Project[] = [
     summary:
       "Real-time video chat with WebRTC and live messaging via WebSockets. Focused on low-latency and mobile performance.",
     tags: ["React", "Node", "Express", "MongoDB", "WebRTC", "WebSockets", "Tailwind"],
-    repo: "https://github.com/your-username/streamify",
+    repo: "https://github.com/Bhumit9416/Streamify",
     demo: "https://your-demo-url.com/streamify",
   },
   { title: "Project Coming Soon", summary: "Stay tuned for something new.", tags: ["Next.js"], comingSoon: true },
