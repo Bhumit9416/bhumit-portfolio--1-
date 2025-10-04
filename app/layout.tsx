@@ -9,9 +9,9 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { SiteHeader } from "@/components/site-header"
 
 export const metadata: Metadata = {
-  title: "v0 App",
-  description: "Created with v0",
-  generator: "v0.app",
+  title: "Bhumit Mittal Portfolio",
+  description: "Created by Bhumit Mittal",
+  generator: "Next.js",
 }
 
 export default function RootLayout({
