@@ -34,7 +34,7 @@ const projects: Project[] = [
     tags: ["React", "Node", "Express", "MongoDB", "MySQL", "Tailwind", "Chart.js"],
     repo: "https://github.com/Bhumit9416/MEDFOLIOFINAL",
     demo: "https://your-demo-url.com/medfolio",
-    image: "/images/projects/medfolio1.png",
+    image: "/images/projects/medfolio1.jpg",
   },
   {
     title: "Streamify – Video Chat App",
