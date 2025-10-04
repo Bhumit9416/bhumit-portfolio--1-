@@ -51,7 +51,14 @@ const projects: Project[] = [
     demo: "https://taskforpanscience.vercel.app/",               // change when available
 
   },
-  { title: "Project Coming Soon", summary: "Stay tuned for something new.", tags: ["TypeScript"], comingSoon: true },
+  {
+  title: "Directed Energy Weapon Dashboard ⚙️",
+  summary:
+    "A full-stack dashboard to visualize and manage research data on Directed Energy Weapons (DEWs), featuring interactive charts, secure access, and modern UI built with Next.js, TypeScript, and Tailwind CSS.",
+  tags: ["Next.js", "TypeScript", "Tailwind", "Node.js", "Dashboard", "Vercel"],
+  repo: "https://github.com/Bhumit9416/DRDO-project",
+  demo: "https://drdo-project-theta.vercel.app/",
+},
 ]
 
 function TiltCard({ children }: { children: React.ReactNode }) {
