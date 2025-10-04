@@ -25,7 +25,7 @@ const projects: Project[] = [
     tags: ["React", "Node", "Express", "MongoDB", "Tailwind", "Socket.io", "JWT"],
     repo: "https://github.com/Bhumit9416/ROZZGARIFINAL",
     demo: "https://your-demo-url.com/rozzgari",
-    image: "/images/projects/rozzgari.png",
+    image: "/images/projects/rozzgari1.png",
   },
   {
     title: "Medfolio – Health Record Manager",
@@ -34,7 +34,7 @@ const projects: Project[] = [
     tags: ["React", "Node", "Express", "MongoDB", "MySQL", "Tailwind", "Chart.js"],
     repo: "https://github.com/Bhumit9416/MEDFOLIOFINAL",
     demo: "https://your-demo-url.com/medfolio",
-    image: "/images/projects/medfolio.png",
+    image: "/images/projects/medfolio1.png",
   },
   {
     title: "Streamify – Video Chat App",
@@ -43,7 +43,7 @@ const projects: Project[] = [
     tags: ["React", "Node", "Express", "MongoDB", "WebRTC", "WebSockets", "Tailwind"],
     repo: "https://github.com/Bhumit9416/Streamify",
     demo: "https://your-demo-url.com/streamify",
-    image: "/images/projects/streamify.png",
+    image: "/images/projects/streamify1.png",
   },
   {
     title: "TaskFlow-Pro",
@@ -52,7 +52,7 @@ const projects: Project[] = [
     tags: ["Next.js", "React", "Node.js", "Express", "MongoDB", "TypeScript", "Tailwind", "JWT"],
     repo: "https://github.com/Bhumit9416/Taskflow",
     demo: "https://taskforpanscience.vercel.app/",
-    image: "/images/projects/taskflow-pro.png",
+    image: "/images/projects/taskflow-pro1.png",
   },
   {
     title: "Directed Energy Weapon Dashboard",
@@ -61,7 +61,7 @@ const projects: Project[] = [
     tags: ["Next.js", "TypeScript", "Tailwind", "Node.js", "Dashboard", "Vercel"],
     repo: "https://github.com/Bhumit9416/DRDO-project",
     demo: "https://drdo-project-theta.vercel.app/",
-    image: "/images/projects/dew-dashboard.png",
+    image: "/images/projects/dew-dashboard1.png",
   },
   {
     title: "School Payment Dashboard",
@@ -70,7 +70,7 @@ const projects: Project[] = [
     tags: ["React", "Node.js", "Express", "MongoDB", "REST API", "Dashboard", "Real-time", "Tailwind"],
     repo: "https://github.com/bhumit22/school_payment_edviron-main",
     demo: "https://edvironassign-lyxa2vku4-bhumitmonu9416-4329s-projects.vercel.app/",
-    image: "/images/projects/school-payment.png",
+    image: "/images/projects/school-payment1.png",
   },
 ]
 
