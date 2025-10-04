@@ -1,7 +1,6 @@
 "use client"
 
 import type React from "react"
-
 import { motion } from "framer-motion"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -15,6 +14,7 @@ type Project = {
   repo?: string
   demo?: string
   comingSoon?: boolean
+  image: string
 }
 
 const projects: Project[] = [
@@ -25,6 +25,7 @@ const projects: Project[] = [
     tags: ["React", "Node", "Express", "MongoDB", "Tailwind", "Socket.io", "JWT"],
     repo: "https://github.com/Bhumit9416/ROZZGARIFINAL",
     demo: "https://your-demo-url.com/rozzgari",
+    image: "/images/projects/rozzgari.png",
   },
   {
     title: "Medfolio – Health Record Manager",
@@ -33,6 +34,7 @@ const projects: Project[] = [
     tags: ["React", "Node", "Express", "MongoDB", "MySQL", "Tailwind", "Chart.js"],
     repo: "https://github.com/Bhumit9416/MEDFOLIOFINAL",
     demo: "https://your-demo-url.com/medfolio",
+    image: "/images/projects/medfolio.png",
   },
   {
     title: "Streamify – Video Chat App",
@@ -41,37 +43,40 @@ const projects: Project[] = [
     tags: ["React", "Node", "Express", "MongoDB", "WebRTC", "WebSockets", "Tailwind"],
     repo: "https://github.com/Bhumit9416/Streamify",
     demo: "https://your-demo-url.com/streamify",
+    image: "/images/projects/streamify.png",
   },
- {
+  {
     title: "TaskFlow-Pro",
     summary:
       "TaskFlow-Pro is a modern, full-stack Task Management System designed to help individuals and teams organize work, manage deadlines, and stay productive. Clean UI, robust features, and responsive design.",
     tags: ["Next.js", "React", "Node.js", "Express", "MongoDB", "TypeScript", "Tailwind", "JWT"],
-    repo: "https://github.com/Bhumit9416/Taskflow",    // change when available
-    demo: "https://taskforpanscience.vercel.app/",               // change when available
-
+    repo: "https://github.com/Bhumit9416/Taskflow",
+    demo: "https://taskforpanscience.vercel.app/",
+    image: "/images/projects/taskflow-pro.png",
   },
   {
-  title: "Directed Energy Weapon Dashboard ",
-  summary:
-    "A full-stack dashboard to visualize and manage research data on Directed Energy Weapons (DEWs), featuring interactive charts, secure access, and modern UI built with Next.js, TypeScript, and Tailwind CSS.",
-  tags: ["Next.js", "TypeScript", "Tailwind", "Node.js", "Dashboard", "Vercel"],
-  repo: "https://github.com/Bhumit9416/DRDO-project",
-  demo: "https://drdo-project-theta.vercel.app/",
-},
-{
-  title: "School Payment Dashboard ",
-  summary:
-    "A complete full-stack school payment system built as part of a developer assessment. Features include a real-time dashboard in React, secure REST APIs with Node.js and Express, and a responsive interface for students and admins.",
-  tags: ["React", "Node.js", "Express", "MongoDB", "REST API", "Dashboard", "Real-time", "Tailwind"],
-  repo: "https://github.com/bhumit22/school_payment_edviron-main",
-  demo: "https://edvironassign-lyxa2vku4-bhumitmonu9416-4329s-projects.vercel.app/",
-},
-
+    title: "Directed Energy Weapon Dashboard",
+    summary:
+      "A full-stack dashboard to visualize and manage research data on Directed Energy Weapons (DEWs), featuring interactive charts, secure access, and modern UI built with Next.js, TypeScript, and Tailwind CSS.",
+    tags: ["Next.js", "TypeScript", "Tailwind", "Node.js", "Dashboard", "Vercel"],
+    repo: "https://github.com/Bhumit9416/DRDO-project",
+    demo: "https://drdo-project-theta.vercel.app/",
+    image: "/images/projects/dew-dashboard.png",
+  },
+  {
+    title: "School Payment Dashboard",
+    summary:
+      "A complete full-stack school payment system built as part of a developer assessment. Features include a real-time dashboard in React, secure REST APIs with Node.js and Express, and a responsive interface for students and admins.",
+    tags: ["React", "Node.js", "Express", "MongoDB", "REST API", "Dashboard", "Real-time", "Tailwind"],
+    repo: "https://github.com/bhumit22/school_payment_edviron-main",
+    demo: "https://edvironassign-lyxa2vku4-bhumitmonu9416-4329s-projects.vercel.app/",
+    image: "/images/projects/school-payment.png",
+  },
 ]
 
 function TiltCard({ children }: { children: React.ReactNode }) {
   const ref = useRef<HTMLDivElement>(null)
+
   function onMove(e: React.MouseEvent<HTMLDivElement>) {
     const el = ref.current
     if (!el) return
@@ -84,11 +89,13 @@ function TiltCard({ children }: { children: React.ReactNode }) {
     const rotY = ((x - midX) / midX) * 6
     el.style.transform = `perspective(900px) rotateX(${rotX}deg) rotateY(${rotY}deg) translateY(-2px)`
   }
+
   function onLeave() {
     const el = ref.current
     if (!el) return
     el.style.transform = ""
   }
+
   return (
     <div
       ref={ref}
@@ -123,11 +130,10 @@ export function Projects() {
                     <img
                       alt={p.title}
                       className="h-full w-full object-cover"
-                      src={`/.jpg?key=wn78k&height=360&width=640&query=${encodeURIComponent(
-                        "project preview " + p.title,
-                      )}`}
+                      src={p.image}
                     />
                   </div>
+
                   <div className="mt-4 flex items-start justify-between gap-3">
                     <div>
                       <h3 className="text-lg font-medium">{p.title}</h3>
@@ -163,7 +169,7 @@ export function Projects() {
                         )}
                         {p.demo && (
                           <a href={p.demo} target="_blank" rel="noreferrer">
-                            <Button size="sm" className="">
+                            <Button size="sm">
                               <ExternalLink className="mr-2 h-4 w-4" />
                               Live
                             </Button>
