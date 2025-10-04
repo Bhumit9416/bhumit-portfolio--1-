@@ -59,6 +59,15 @@ const projects: Project[] = [
   repo: "https://github.com/Bhumit9416/DRDO-project",
   demo: "https://drdo-project-theta.vercel.app/",
 },
+{
+  title: "School Payment Dashboard 💳",
+  summary:
+    "A complete full-stack school payment system built as part of a developer assessment. Features include a real-time dashboard in React, secure REST APIs with Node.js and Express, and a responsive interface for students and admins.",
+  tags: ["React", "Node.js", "Express", "MongoDB", "REST API", "Dashboard", "Real-time", "Tailwind"],
+  repo: "https://github.com/bhumit22/school_payment_edviron-main",
+  demo: "https://edvironassign-lyxa2vku4-bhumitmonu9416-4329s-projects.vercel.app/",
+},
+
 ]
 
 function TiltCard({ children }: { children: React.ReactNode }) {
