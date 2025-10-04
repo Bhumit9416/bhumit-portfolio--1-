@@ -32,7 +32,7 @@ export function Hero() {
           {/* Rotating subtitle */}
           <div className="text-primary text-xs md:text-sm font-medium mt-1">
             {titles[idx]}
-            <span className="sr-only">SDE stands for Software Development Engineer</span>
+            <span className="sr-only"><SDE /></span>
           </div>
 
           <p className="text-muted-foreground">

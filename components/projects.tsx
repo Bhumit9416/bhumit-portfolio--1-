@@ -52,7 +52,7 @@ const projects: Project[] = [
 
   },
   {
-  title: "Directed Energy Weapon Dashboard ⚙️",
+  title: "Directed Energy Weapon Dashboard ",
   summary:
     "A full-stack dashboard to visualize and manage research data on Directed Energy Weapons (DEWs), featuring interactive charts, secure access, and modern UI built with Next.js, TypeScript, and Tailwind CSS.",
   tags: ["Next.js", "TypeScript", "Tailwind", "Node.js", "Dashboard", "Vercel"],
@@ -60,7 +60,7 @@ const projects: Project[] = [
   demo: "https://drdo-project-theta.vercel.app/",
 },
 {
-  title: "School Payment Dashboard 💳",
+  title: "School Payment Dashboard ",
   summary:
     "A complete full-stack school payment system built as part of a developer assessment. Features include a real-time dashboard in React, secure REST APIs with Node.js and Express, and a responsive interface for students and admins.",
   tags: ["React", "Node.js", "Express", "MongoDB", "REST API", "Dashboard", "Real-time", "Tailwind"],
