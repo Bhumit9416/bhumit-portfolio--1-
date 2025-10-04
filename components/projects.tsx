@@ -42,7 +42,15 @@ const projects: Project[] = [
     repo: "https://github.com/Bhumit9416/Streamify",
     demo: "https://your-demo-url.com/streamify",
   },
-  { title: "Project Coming Soon", summary: "Stay tuned for something new.", tags: ["Next.js"], comingSoon: true },
+ {
+    title: "TaskFlow-Pro",
+    summary:
+      "TaskFlow-Pro is a modern, full-stack Task Management System designed to help individuals and teams organize work, manage deadlines, and stay productive. Clean UI, robust features, and responsive design.",
+    tags: ["Next.js", "React", "Node.js", "Express", "MongoDB", "TypeScript", "Tailwind", "JWT"],
+    repo: "https://github.com/Bhumit9416/Taskflow",    // change when available
+    demo: "https://taskforpanscience.vercel.app/",               // change when available
+
+  },
   { title: "Project Coming Soon", summary: "Stay tuned for something new.", tags: ["TypeScript"], comingSoon: true },
 ]
 
